@@ -1,6 +1,6 @@
 # Home page
 
-![alt text](image.png)
+![alt text](src/image.png)
 
 ## installation command
 
