@@ -1,0 +1,108 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Khóa học Lập trình Web cơ bản",
+      "price": 499000,
+      "image": "https://files.fullstack.edu.vn/f8-prod/courses/7.png",
+      "description": "Khóa học giúp bạn nắm vững kiến thức nền tảng về HTML, CSS và JavaScript. Thực hành dự án thực tế để xây dựng giao diện web hiện đại, phù hợp cho người mới bắt đầu từ con số 0.",
+      "heart": [],
+      "viewed": [
+        176
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Ebook TOEIC 800+",
+      "price": 99000,
+      "image": "https://files.fullstack.edu.vn/f8-prod/blog_posts/273/614043e523ad9.png",
+      "description": "Tài liệu luyện thi TOEIC đạt 800+ với chiến lược làm bài thông minh, mẹo phân tích đề và bài tập sát với thực tế. Phù hợp cho người cần điểm cao trong thời gian ngắn.",
+      "heart": [],
+      "viewed": []
+    },
+    {
+      "id": "3",
+      "name": "Khóa học ReactJS từ A-Z",
+      "price": 799000,
+      "image": "https://files.fullstack.edu.vn/f8-prod/courses/13/13.png",
+      "description": "Học ReactJS thông qua các ví dụ và bài tập thực tế, từ cơ bản đến chuyên sâu. Bao gồm Router, Hooks, Context API, và triển khai ứng dụng cuối khóa lên môi trường thực tế.",
+      "heart": [],
+      "viewed": [
+        176
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Combo luyện thi Đại học môn Toán",
+      "price": 349000,
+      "image": "https://files.fullstack.edu.vn/f8-prod/blog_posts/1671/61b6368983c16.jpg",
+      "description": "Bộ tài liệu tổng hợp kiến thức 3 năm cấp 3, hàng trăm bài tập phân dạng và đề thi thử chính thức. Phù hợp với học sinh lớp 12 đang chuẩn bị cho kỳ thi THPT quốc gia.",
+      "heart": [],
+      "viewed": []
+    },
+    {
+      "id": "5",
+      "name": "Khóa học Excel chuyên sâu",
+      "price": 259000,
+      "image": "https://files.fullstack.edu.vn/f8-prod/blog_posts/107/613a1f3685814.png",
+      "description": "Từ cơ bản đến nâng cao: học công thức, hàm, pivot table, biểu đồ và xử lý dữ liệu. Giúp bạn tối ưu công việc văn phòng, tài chính, phân tích số liệu hiệu quả hơn.",
+      "heart": [],
+      "viewed": [
+        176
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Tài liệu Ngữ pháp tiếng Anh",
+      "price": 49000,
+      "image": "https://i.ytimg.com/vi/AzmdwZ6e_aM/maxresdefault.jpg",
+      "description": "Tài liệu tổng hợp toàn bộ ngữ pháp tiếng Anh phổ thông, kèm ví dụ minh họa dễ hiểu. Phù hợp cho học sinh, sinh viên và người đi làm cần ôn lại kiến thức nền.",
+      "heart": [],
+      "viewed": [
+        176
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Khóa học Kỹ năng mềm cho sinh viên",
+      "price": 159000,
+      "image": "https://files.fullstack.edu.vn/f8-prod/courses/21/63e1bcbaed1dd.png",
+      "description": "Rèn luyện kỹ năng thuyết trình, giao tiếp, làm việc nhóm và tư duy phản biện. Học qua tình huống thực tế, giúp sinh viên tự tin hơn khi đi làm hoặc học tập nhóm.",
+      "heart": [],
+      "viewed": [
+        176
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Khóa học IELTS Writing nâng cao",
+      "price": 699000,
+      "image": "https://files.fullstack.edu.vn/f8-prod/blog_posts/279/6153f692d366e.jpg",
+      "description": "Chiến lược luyện viết IELTS Writing Task 1 & 2 đạt band 7.0+. Bao gồm hướng dẫn chi tiết từng dạng đề, cách lập dàn ý, từ vựng học thuật và phân tích bài mẫu.",
+      "heart": [],
+      "viewed": []
+    },
+    {
+      "id": "9",
+      "name": "Khóa học Thiết kế PowerPoint chuyên nghiệp",
+      "price": 189000,
+      "image": "https://files.fullstack.edu.vn/f8-prod/courses/14/624faac11d109.png",
+      "description": "Học cách thiết kế slide bắt mắt, trình bày logic và truyền tải thông điệp hiệu quả. Kèm mẫu template sẵn, kỹ thuật hoạt hình và mẹo trình chiếu chuyên nghiệp.",
+      "heart": [],
+      "viewed": [
+        176
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Ebook Kỹ năng học tập hiệu quả",
+      "price": 39000,
+      "image": "https://files.fullstack.edu.vn/f8-prod/courses/3.png",
+      "description": "Tổng hợp phương pháp học tập thông minh, quản lý thời gian, ghi nhớ nhanh và ôn thi hiệu quả. Dành cho học sinh sinh viên muốn cải thiện kết quả học tập.",
+      "heart": [],
+      "viewed": [
+        176
+      ]
+    }
+  ]
+}
