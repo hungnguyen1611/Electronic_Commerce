@@ -12,10 +12,11 @@ import React, { useState } from "react";
 import CustomInput from "../CustomInput/CustomInput";
 import SideBar from "../SideBar/SideBar";
 import Autocomplete from "@mui/material/Autocomplete";
-import { fetchProducts } from "../../api";
+
 import { useDebounceFn } from "../../hooks/useDebounce";
 import { useNavigate } from "react-router-dom";
 import SugestProduct from "../SuggestProduct/SugestProduct";
+import { fetchProducts } from "../../api/api_json_server";
 export default function AppBar() {
   const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(false);

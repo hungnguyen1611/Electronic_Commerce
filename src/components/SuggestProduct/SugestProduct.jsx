@@ -26,11 +26,6 @@ export default function SugestProduct({ sideBar }) {
     setOpen(false);
   };
 
-  // const fetchProduct = async () => {
-  //   const res = await fetchProductByUser(user.id);
-  //   setProducts(res);
-  // };
-
   useEffect(() => {
     const filtered = educationProducts?.filter((item) =>
       item.heart.includes(user?.id)
@@ -47,7 +42,13 @@ export default function SugestProduct({ sideBar }) {
   return (
     <Box>
       {sideBar ? (
-        <SidebarItem onClick={handleOpen} sx={{ textTransform: "capitalize" }}>
+        <SidebarItem
+          onClick={handleOpen}
+          sx={{
+            textTransform: "capitalize",
+            display: { xs: "flex", md: "none" },
+          }}
+        >
           <FaIoxhost />
           suggest
         </SidebarItem>
@@ -55,7 +56,9 @@ export default function SugestProduct({ sideBar }) {
         <Button
           variant="contained"
           onClick={handleOpen}
-          sx={{ textTransform: "capitalize" }}
+          sx={{
+            textTransform: "capitalize",
+          }}
         >
           <FaIoxhost style={{ marginRight: "8px" }} />
           Suggest

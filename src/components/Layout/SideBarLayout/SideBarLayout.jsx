@@ -47,9 +47,10 @@ export default function SideBarLayout() {
             <TbEyeSearch />
             Viewed
           </SidebarItem>
-
           <Divider sx={{ bgcolor: "#fff" }} />
-          <SugestProduct sideBar />
+          <Box sx={{ display: { xs: "block", sm: "none" } }}>
+            <SugestProduct sideBar />
+          </Box>
           <FilterProduct />
         </Stack>
       ) : (

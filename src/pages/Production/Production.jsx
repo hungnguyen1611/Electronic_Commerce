@@ -4,10 +4,11 @@ import React, { useEffect } from "react";
 
 import { useParams } from "react-router-dom";
 import { toast } from "react-toastify";
-import { fetchProduct } from "../../api";
+
 import AppBar from "../../components/AppBar/AppBar";
 import CustomButton from "../../components/CustomButton/CustomButton";
 import { formatterMoney } from "../../utils/formatter";
+import { fetchProduct } from "../../api/api_json_server";
 
 export default function Production() {
   const { id } = useParams();

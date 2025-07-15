@@ -16,12 +16,6 @@ export default function SideBar() {
           <IoIosMenu />
         </IconButton>
         <Drawer open={open} onClose={toggleDrawer(false)}>
-          {/* <List sx={{ width: 280 }}>
-            <ListItem>
-              <SugestProduct sideBar />O
-            </ListItem>
-          </List> */}
-
           <Box sx={{ width: 280, height: "100%" }}>
             <SideBarLayout closeDrawer={toggleDrawer(false)} />
           </Box>

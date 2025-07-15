@@ -64,7 +64,7 @@ export default function FilterProduct() {
   };
 
   return (
-    <Box>
+    <>
       <SidebarItem
         className={open ? "active" : ""}
         onClick={() => setOpen(!open)}
@@ -124,6 +124,6 @@ export default function FilterProduct() {
           ))}
         </Select>
       </Collapse>
-    </Box>
+    </>
   );
 }
