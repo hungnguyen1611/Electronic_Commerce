@@ -9,7 +9,7 @@ export default function Layout() {
     <Box>
       <AppBar />
 
-      <Grid mt="64px" container>
+      <Grid container>
         <Grid
           component={"main"}
           container
@@ -23,7 +23,8 @@ export default function Layout() {
         <Grid
           height={"calc(100vh - 64px)"}
           size={{ sm: 9, md: 10 }}
-          my={2}
+          py={{ xs: 2, sm: 4 }}
+
           // sx={{ overflowY: "auto", overflowX: "hidden", position: "relative" }}
         >
           <Container>

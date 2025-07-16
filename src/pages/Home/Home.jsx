@@ -24,7 +24,7 @@ export default function Home() {
   }, [dispatch, user]);
   return (
     <>
-      <Box sx={{ py: 4 }}>
+      <Box>
         {/* <AppBar /> */}
 
         <Typography fontWeight={"bold"} mb={4} variant="h4">

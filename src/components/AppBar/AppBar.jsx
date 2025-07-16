@@ -47,57 +47,61 @@ export default function AppBar() {
   };
 
   return (
-    <AppBarMui position="fixed" sx={{ bgcolor: "#fff" }}>
-      <Toolbar sx={{ justifyContent: "space-between", gap: 2 }}>
-        <Typography fontWeight={"bold"} color="#000">
-          Commonerce
-        </Typography>
+    <>
+      <AppBarMui position="fixed" sx={{ bgcolor: "#fff" }}>
+        <Toolbar sx={{ justifyContent: "space-between", gap: 2 }}>
+          <Typography fontWeight={"bold"} color="#000">
+            Commonerce
+          </Typography>
 
-        <Autocomplete
-          open={open}
-          onOpen={() => {
-            setOpen(true);
-          }}
-          onClose={() => {
-            setOpen(false);
-          }}
-          getOptionLabel={(option) => option.name}
-          noOptionsText={
-            !products
-              ? "Search for a product"
-              : "No product found, please try again"
-          }
-          options={products || []}
-          isOptionEqualToValue={(option, value) => option.id === value.id}
-          loading={loading}
-          onInputChange={debounceSearchBoards}
-          onChange={handleSelectedBoard}
-          sx={{ width: "40%", flexGrow: { xs: 1, sm: 0 } }}
-          renderInput={(params) => (
-            <CustomInput
-              {...params}
-              sx={{
-                "& .MuiInputBase-root .MuiAutocomplete-input": {
-                  padding: "4px 16px",
-                },
-              }}
-              placeholder="Search"
-            />
-          )}
-        />
+          <Autocomplete
+            open={open}
+            onOpen={() => {
+              setOpen(true);
+            }}
+            onClose={() => {
+              setOpen(false);
+            }}
+            getOptionLabel={(option) => option.name}
+            noOptionsText={
+              !products
+                ? "Search for a product"
+                : "No product found, please try again"
+            }
+            options={products || []}
+            isOptionEqualToValue={(option, value) => option.id === value.id}
+            loading={loading}
+            onInputChange={debounceSearchBoards}
+            onChange={handleSelectedBoard}
+            sx={{ width: "40%", flexGrow: { xs: 1, sm: 0 } }}
+            renderInput={(params) => (
+              <CustomInput
+                {...params}
+                sx={{
+                  "& .MuiInputBase-root .MuiAutocomplete-input": {
+                    padding: "4px 16px",
+                  },
+                }}
+                placeholder="Search"
+              />
+            )}
+          />
 
-        {/* <Box sx={{ display: { xs: "none", sm: "flex" } }}>
-          <Button sx={{ textTransform: "capitalize" }}>
-            Product suggestions
-          </Button>
-        </Box> */}
+          {/* <Box sx={{ display: { xs: "none", sm: "flex" } }}>
+            <Button sx={{ textTransform: "capitalize" }}>
+              Product suggestions
+            </Button>
+          </Box> */}
 
-        <Box sx={{ display: { xs: "none", sm: "flex" } }}>
-          <SugestProduct />
-        </Box>
+          <Box sx={{ display: { xs: "none", sm: "flex" } }}>
+            <SugestProduct />
+          </Box>
 
-        <SideBar />
-      </Toolbar>
-    </AppBarMui>
+          <SideBar />
+        </Toolbar>
+      </AppBarMui>
+      <Toolbar />
+      {/* Place the tool Bar here to keep the original position like sticky (because sticky will drift when applying sroll to the browser, this will fix that*/}
+    </>
   );
 }
