@@ -15,6 +15,8 @@ export default function ButtonToTop() {
         padding: 0,
         borderRadius: "50%",
         boxShadow: "0 0 10px #1976d2",
+        position: "fixed",
+
         // boxShadow: 'none'
         // stroke: "#fff",
         // fill: "#fff",

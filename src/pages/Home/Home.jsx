@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import AppBar from "../../components/AppBar/AppBar";
 import SimpleSlider from "../../components/SimpleSlider/SimpleSlider";
 import { Course } from "./Course/Course";
-import ButtonToTop from "./ButtonToTop/ButtonToTop";
+
 import { useDispatch, useSelector } from "react-redux";
 import { selectUser, setUser } from "../../redux/userSlice.js/userSlice";
 
@@ -23,17 +23,17 @@ export default function Home() {
     }
   }, [dispatch, user]);
   return (
-    <Box sx={{ mb: 4 }}>
-      {/* <AppBar /> */}
+    <>
+      <Box sx={{ mb: 4 }}>
+        {/* <AppBar /> */}
 
-      <Typography fontWeight={"bold"} gutterBottom variant="h4">
-        Introduce
-      </Typography>
-      <SimpleSlider />
+        <Typography fontWeight={"bold"} gutterBottom variant="h4">
+          Introduce
+        </Typography>
+        <SimpleSlider />
 
-      <Course />
-
-      <ButtonToTop />
-    </Box>
+        <Course />
+      </Box>
+    </>
   );
 }

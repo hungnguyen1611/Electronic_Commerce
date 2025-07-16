@@ -8,14 +8,14 @@ export default function SimpleSlider() {
   const loading = useSelector(selectLoading);
   // const loading = true;
   const settings = {
-    speed: 4000,
+    speed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    // autoplay: true,
-    autoplaySpeed: 0,
+    autoplay: true,
+    autoplaySpeed: 6000,
     cssEase: "linear",
-    // arrows: false,
-    // dots: false,
+    arrows: false,
+    dots: false,
   };
 
   const listImages = [
