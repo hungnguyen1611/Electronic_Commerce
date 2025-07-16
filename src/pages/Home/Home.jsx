@@ -24,10 +24,10 @@ export default function Home() {
   }, [dispatch, user]);
   return (
     <>
-      <Box sx={{ mb: 4 }}>
+      <Box sx={{ py: 4 }}>
         {/* <AppBar /> */}
 
-        <Typography fontWeight={"bold"} gutterBottom variant="h4">
+        <Typography fontWeight={"bold"} mb={4} variant="h4">
           Introduce
         </Typography>
         <SimpleSlider />

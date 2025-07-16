@@ -1,42 +1,37 @@
-import { Box, Button, Container, Grid } from "@mui/material";
-import React, { useEffect, useState } from "react";
-import Home from "../../pages/Home/Home";
-import AppBar from "../AppBar/AppBar";
+import { Box, Container, Grid } from "@mui/material";
 import { Outlet } from "react-router-dom";
-import SideBarLayout from "./SideBarLayout/SideBarLayout";
 import ButtonToTop from "../../pages/Home/ButtonToTop/ButtonToTop";
+import AppBar from "../AppBar/AppBar";
+import SideBarLayout from "./SideBarLayout/SideBarLayout";
 
 export default function Layout() {
-  const [pageHeight, setPageHeight] = useState(0);
-
-  useEffect(() => {
-    const fullHeight = document.documentElement.scrollHeight;
-    setPageHeight(fullHeight);
-  }, []);
   return (
     <Box>
       <AppBar />
 
-      <Grid component={"main"} container>
+      <Grid mt="64px" container>
         <Grid
+          component={"main"}
+          container
           display={{ xs: "none", sm: "block" }}
-          sx={{ height: `${pageHeight}px` }}
           size={{ sm: 3, md: 2 }}
         >
-          <SideBarLayout />
+          <Box position={"fixed"} width={"inherit"} height={"100%"}>
+            <SideBarLayout />
+          </Box>
         </Grid>
         <Grid
           height={"calc(100vh - 64px)"}
-          pt={2}
           size={{ sm: 9, md: 10 }}
-          // sx={{ overflowY: "scroll", overflowX: "hidden" }}
+          my={2}
+          // sx={{ overflowY: "auto", overflowX: "hidden", position: "relative" }}
         >
           <Container>
             <Outlet />
           </Container>
+          <ButtonToTop />
         </Grid>
       </Grid>
-      <ButtonToTop />
     </Box>
   );
 }

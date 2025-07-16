@@ -47,7 +47,7 @@ export default function AppBar() {
   };
 
   return (
-    <AppBarMui position="sticky" sx={{ bgcolor: "#fff" }}>
+    <AppBarMui position="fixed" sx={{ bgcolor: "#fff" }}>
       <Toolbar sx={{ justifyContent: "space-between", gap: 2 }}>
         <Typography fontWeight={"bold"} color="#000">
           Commonerce

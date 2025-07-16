@@ -25,7 +25,7 @@ export const Course = () => {
   }, [dispatch]);
 
   return (
-    <Stack mt={4} spacing={4} component={"section"}>
+    <Stack py={4} spacing={4} component={"section"}>
       <Typography fontWeight={"bold"} variant="h4">
         Course
       </Typography>
