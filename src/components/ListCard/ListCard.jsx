@@ -10,11 +10,11 @@ export default function ListCard({ educationProducts }) {
   return (
     <Grid container rowSpacing={4} columnSpacing={2}>
       {(loading
-        ? Array.from({ length: 4 }, (_, i) => i)
-        : educationProducts
+        ? Array.from({ length: 4 }, (_, i) => ({ id: i }))
+        : educationProducts || []
       )?.map((item, index) => (
-        <Grid key={index} item xs={12} sm={6} md={4} lg={3}>
-          {item ? <CardItem item={item} /> : <SkeletonLoader />}
+        <Grid key={item.id || index} item xs={12} sm={6} md={4} lg={3}>
+          {loading || item ? <SkeletonLoader /> : <CardItem item={item} />}
         </Grid>
       ))}
     </Grid>
