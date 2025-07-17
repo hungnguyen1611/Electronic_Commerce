@@ -9,13 +9,24 @@ export default function ListCard({ educationProducts }) {
   // const loading = true;
   return (
     <Grid container rowSpacing={4} columnSpacing={2}>
-      {(loading ? [...Array.from({ length: 4 })] : educationProducts).map(
+      {/* {(loading ? [...Array.from({ length: 4 })] : educationProducts).map(
         (item, index) => (
           <Grid key={index} size={{ xs: 12, sm: 6, md: 4, lg: 3 }}>
             {item ? <CardItem item={item} /> : <SkeletonLoader />}
           </Grid>
         )
-      )}
+      )} */}
+      {loading
+        ? [...Array.from({ length: 4 })].map((item, index) => (
+            <Grid key={index} size={{ xs: 12, sm: 6, md: 4, lg: 3 }}>
+              <SkeletonLoader />
+            </Grid>
+          ))
+        : educationProducts.map((item, index) => (
+            <Grid key={index} size={{ xs: 12, sm: 6, md: 4, lg: 3 }}>
+              <CardItem item={item} />
+            </Grid>
+          ))}
     </Grid>
   );
 }
