@@ -6,7 +6,9 @@
       "price": 499000,
       "image": "https://files.fullstack.edu.vn/f8-prod/courses/7.png",
       "description": "Khóa học giúp bạn nắm vững kiến thức nền tảng về HTML, CSS và JavaScript. Thực hành dự án thực tế để xây dựng giao diện web hiện đại, phù hợp cho người mới bắt đầu từ con số 0.",
-      "heart": [],
+      "heart": [
+        24
+      ],
       "viewed": [
         176,
         64
@@ -18,7 +20,9 @@
       "price": 99000,
       "image": "https://files.fullstack.edu.vn/f8-prod/blog_posts/273/614043e523ad9.png",
       "description": "Tài liệu luyện thi TOEIC đạt 800+ với chiến lược làm bài thông minh, mẹo phân tích đề và bài tập sát với thực tế. Phù hợp cho người cần điểm cao trong thời gian ngắn.",
-      "heart": [],
+      "heart": [
+        29
+      ],
       "viewed": [
         176,
         64
@@ -30,7 +34,9 @@
       "price": 799000,
       "image": "https://files.fullstack.edu.vn/f8-prod/courses/13/13.png",
       "description": "Học ReactJS thông qua các ví dụ và bài tập thực tế, từ cơ bản đến chuyên sâu. Bao gồm Router, Hooks, Context API, và triển khai ứng dụng cuối khóa lên môi trường thực tế.",
-      "heart": [],
+      "heart": [
+        29
+      ],
       "viewed": [
         176
       ]
