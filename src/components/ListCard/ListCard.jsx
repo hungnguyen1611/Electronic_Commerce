@@ -4,7 +4,7 @@ import { selectLoading } from "../../redux/productSlice/productSlice";
 import { CardItem } from "../Card/CardItem";
 import SkeletonLoader from "../skeleton/skeletonLoader";
 
-export default function ListCard({ educationProducts }) {
+export default function ListCard({ educationProducts = [] }) {
   const loading = useSelector(selectLoading);
   // const loading = true;
   return (
