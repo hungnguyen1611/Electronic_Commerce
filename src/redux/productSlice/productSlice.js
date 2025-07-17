@@ -9,7 +9,7 @@ const initialState = {
 export const fetchProducts = createAsyncThunk(
   "product/fetchProduct",
   async () => {
-    const res = await axiosInstance.get(`/api/products`);
+    const res = await axiosInstance.get(`/products`);
     return res.data;
   }
 );
@@ -17,7 +17,7 @@ export const fetchProducts = createAsyncThunk(
 export const fetchProductsFilter = createAsyncThunk(
   "product/fetchProductsFilter",
   async (filterValue) => {
-    const res = await axiosInstance.get(`/api/products${filterValue}`);
+    const res = await axiosInstance.get(`/products${filterValue}`);
     return res.data;
   }
 );
@@ -25,7 +25,7 @@ export const fetchProductsFilter = createAsyncThunk(
 export const updateProduct = createAsyncThunk(
   "product/updateProduct",
   async ({ id, userId, type }) => {
-    const res = await axiosInstance.get(`/api/products/${id}`);
+    const res = await axiosInstance.get(`/products/${id}`);
     const product = res.data;
     const updatedHearts = product[type].includes(userId)
       ? type === "heart"
@@ -33,7 +33,7 @@ export const updateProduct = createAsyncThunk(
         : product[type]
       : [...product[type], userId];
 
-    const res2 = await axiosInstance.patch(`/api/products/${id}`, {
+    const res2 = await axiosInstance.patch(`/products/${id}`, {
       [type]: updatedHearts,
     });
 
