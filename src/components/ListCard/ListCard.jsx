@@ -6,16 +6,17 @@ import SkeletonLoader from "../skeleton/skeletonLoader";
 
 export default function ListCard({ educationProducts }) {
   const loading = useSelector(selectLoading);
-  // const loading = true;
+
   return (
     <Grid container rowSpacing={4} columnSpacing={2}>
-      {(loading ? Array.from(new Array(4)) : educationProducts)?.map(
-        (item, index) => (
-          <Grid key={index} size={{ xs: 12, sm: 6, md: 4, lg: 3 }}>
-            {item ? <CardItem item={item} /> : <SkeletonLoader />}
-          </Grid>
-        )
-      )}
+      {(loading
+        ? Array.from({ length: 4 }, (_, i) => i)
+        : educationProducts
+      )?.map((item, index) => (
+        <Grid key={index} item xs={12} sm={6} md={4} lg={3}>
+          {item ? <CardItem item={item} /> : <SkeletonLoader />}
+        </Grid>
+      ))}
     </Grid>
   );
 }
