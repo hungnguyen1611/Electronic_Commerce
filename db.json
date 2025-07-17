@@ -38,7 +38,8 @@
         29
       ],
       "viewed": [
-        176
+        176,
+        64
       ]
     },
     {
@@ -48,7 +49,9 @@
       "image": "https://files.fullstack.edu.vn/f8-prod/blog_posts/1671/61b6368983c16.jpg",
       "description": "Bộ tài liệu tổng hợp kiến thức 3 năm cấp 3, hàng trăm bài tập phân dạng và đề thi thử chính thức. Phù hợp với học sinh lớp 12 đang chuẩn bị cho kỳ thi THPT quốc gia.",
       "heart": [],
-      "viewed": []
+      "viewed": [
+        64
+      ]
     },
     {
       "id": "5",
@@ -67,7 +70,9 @@
       "price": 49000,
       "image": "https://i.ytimg.com/vi/AzmdwZ6e_aM/maxresdefault.jpg",
       "description": "Tài liệu tổng hợp toàn bộ ngữ pháp tiếng Anh phổ thông, kèm ví dụ minh họa dễ hiểu. Phù hợp cho học sinh, sinh viên và người đi làm cần ôn lại kiến thức nền.",
-      "heart": [],
+      "heart": [
+        64
+      ],
       "viewed": [
         176
       ]

@@ -22,7 +22,7 @@ export default function ListCard({ educationProducts = [] }) {
               <SkeletonLoader />
             </Grid>
           ))
-        : educationProducts?.map((item, index) => (
+        : educationProducts.map((item, index) => (
             <Grid key={index} size={{ xs: 12, sm: 6, md: 4, lg: 3 }}>
               <CardItem item={item} />
             </Grid>

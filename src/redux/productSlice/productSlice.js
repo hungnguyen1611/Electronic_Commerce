@@ -36,6 +36,7 @@ export const updateProduct = createAsyncThunk(
     const res2 = await axiosInstance.patch(`/api/products/${id}`, {
       [type]: updatedHearts,
     });
+    console.log("PATCH response:", res2.data); // <- kiểm tra ở đây
 
     return res2.data;
   }
