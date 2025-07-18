@@ -9,7 +9,7 @@ const rootPersistConfig = {
 
   storage: storage,
 
-  whitelist: ["product", "user"],
+  whitelist: ["user"],
 };
 
 const reducers = combineReducers({
